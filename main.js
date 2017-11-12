@@ -6,12 +6,16 @@ const pathToThisDirectory = path.dirname(fs.realpathSync(__filename));
 
 const url = 'http://stephensp.com';
 const name = 'stephensp.png';
+const runHeadless = true;
+const width = 1000;
+const height = 500;
 
 async function getPic() {
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({headless: runHeadless});
   const page = await browser.newPage();
 
   await page.goto(url);
+  await page.setViewport({width: width, height: height});
   await page.screenshot({path: path.join(pathToThisDirectory, '/images/', name) });
   await browser.close();
 }

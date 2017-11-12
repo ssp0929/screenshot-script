@@ -4,10 +4,13 @@ Runs headless chrome when initiated and with given URL and file name, takes scre
 
 # How to run...
 
-Edit these two values in the file.
+Edit these variables.
 ```javascript
 const url = 'http://yoururl.com'
 const name = 'nameOfFile.png'
+const runHeadless = true or false //recommended true
+const width = 1000 //px values for width of screenshot
+const height = 500 //px values for height of screenshot
 ```
 And then run in terminal/cmd.
 > node main.js
