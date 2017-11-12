@@ -4,8 +4,8 @@ const path = require('path');
 
 const pathToThisDirectory = path.dirname(fs.realpathSync(__filename));
 
-const url = 'http://stephensp.com';
-const name = 'stephensp.png';
+const url = 'http://google.com';
+const name = 'google.png';
 const runHeadless = true;
 const width = 1000;
 const height = 500;
