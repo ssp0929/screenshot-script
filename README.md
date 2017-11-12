@@ -4,7 +4,7 @@ Runs headless chrome when initiated and with given URL and file name, takes scre
 
 # How to run...
 
-Edit these two values in the file.
+Edit these two values in the main.js file.
 ```javascript
 const url = 'http://yoururl.com'
 const name = 'nameOfFile.png'
